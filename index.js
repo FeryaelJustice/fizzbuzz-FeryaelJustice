@@ -5,19 +5,19 @@ const App = {
         }
     },
     fizzBuzz(num) {
-        if(num % 5 && num % 3) {
+        if ((num % 5 === 0) && (num % 3 === 0)) {
             return 'FizzBuzz'
         }
-        if(num % 5 === 0) {
+        if (num % 5 === 0) {
             return 'Buzz'
         }
-        if(num % 3 === 0) {
+        if (num % 3 === 0) {
             return 'Fizz'
         }
         return num
     }
 }
 
-App.fizzBuzzPrint(100)
+console.log(App.fizzBuzz(1))
 
 module.exports = App
